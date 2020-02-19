@@ -1,6 +1,6 @@
 module.exports = function transform(arr) {
 
-    simple = arr.every(function(elem){
+    const simple = arr.every(function(elem){
         return elem % 1 === 0;
     });
 
