@@ -3,10 +3,9 @@ module.exports = function createDreamTeam(members) {
         return false;
     }
     let nameTeam = [];
-    let concatArray = [].concat(...members);
-    for (let i = 0; i < concatArray.length; i++){
-      if (typeof concatArray[i] === "string"){
-          let word = concatArray[i].replace( /\s/g, "").split('');
+    for (let i = 0; i < members.length; i++){
+      if (typeof members[i] === "string"){
+          let word = members[i].replace( /\s/g, "").split('');
           nameTeam.push(word[0].toUpperCase());
       }
     }
